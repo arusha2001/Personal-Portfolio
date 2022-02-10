@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Responsive Portfolio Website</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">ARUSHA</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user-circle nav__icon"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i>Qualification
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>Contact Me
+              </a>
+            </li>
+          </ul>
+
+          <i class="uil uil-times nav__close" id="nav__close"></i>
+        </div>
+
+        <div class="nav_btns">
+          <!-- theme change button-->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content grid">
+            <div class="home_social">
+              <a
+                href="https://github.com/arusha2001"
+                target="blank"
+                class="home_social-icon"
+              >
+                <i class="uil uil-github"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/__.arushaaa.__/"
+                target="blank"
+                class="home_social-icon"
+              >
+                <i class="uil uil-instagram-alt"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/arusha-sharma-6ab1031b0/"
+                target="blank"
+                class="home_social-icon"
+              >
+                <i class="uil uil-linkedin"></i>
+              </a>
+            </div>
+
+            <div class="home_img">
+              <svg
+                class="home_blob"
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    fill="#A257E0"
+                    d="M55,-55.4C63.5,-46.6,57.1,-23.3,50.5,-6.6C44,10.1,37.1,20.2,28.7,30.2C20.2,40.1,10.1,50,-3.7,53.7C-17.6,57.5,-35.2,55.1,-49.6,45.2C-63.9,35.2,-75.1,17.6,-77.7,-2.6C-80.3,-22.8,-74.4,-45.6,-60,-54.5C-45.6,-63.4,-22.8,-58.3,0.2,-58.5C23.3,-58.8,46.6,-64.3,55,-55.4Z"
+                    transform="translate(100 100)"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    fill="#A257E0"
+                    d="M55,-55.4C63.5,-46.6,57.1,-23.3,50.5,-6.6C44,10.1,37.1,20.2,28.7,30.2C20.2,40.1,10.1,50,-3.7,53.7C-17.6,57.5,-35.2,55.1,-49.6,45.2C-63.9,35.2,-75.1,17.6,-77.7,-2.6C-80.3,-22.8,-74.4,-45.6,-60,-54.5C-45.6,-63.4,-22.8,-58.3,0.2,-58.5C23.3,-58.8,46.6,-64.3,55,-55.4Z"
+                    transform="translate(100 100)"
+                  />
+                  <image
+                    class="home_blob-img"
+                    x="2"
+                    y="40"
+                    xlink:href="img/img1.png"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <div class="home_data">
+              <h1 class="home_title">Hey there,I'm Arusha Sharma</h1>
+              <h3 class="home_subtitle">Frontend Developer</h3>
+              <p class="home_description">
+                Pre-Final year Engineering student passionate about learning new
+                skills and implementing them. Looking forward to explore in
+                backend development.
+              </p>
+
+              <a href="#contact" class="button button--flex">
+                Contact Me
+                <i class="uil uil-message button_icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home_scroll">
+            <a href="#about" class="home_scroll-button button--flex">
+              <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+              <span class="home_scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home_scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section_title">About Me</h2>
+
+        <span class="section_subtitle">My Introduction</span>
+
+        <div class="about_container container grid">
+          <img src="img/img2.jpeg" class="about_img" alt="" />
+
+          <div class="about_data">
+            <p class="about_description">
+              Pre-Final year Engineering student having interest in Web
+              Development. Having knowledge of programming languages like C++,
+              Java, Html, CSS, JavaScript, Node.js. Made webpages and worked on
+              projects using the same. Also have worked in teams. Looking
+              forward to explore more in frontend as well as backend
+              development.
+            </p>
+
+            <div class="about_buttons">
+              <a
+                download=""
+                href="pdf/arusha sharma resume..pdf"
+                class="button button--flex"
+                >Download CV<i class="uil uil-download-alt button_icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section_title">Skills</h2>
+
+        <span class="section_subtitle">My technical level</span>
+        <div class="box-container">
+          <div class="box">
+            <img src="img/icon-1.png" />
+            <h3>html</h3>
+          </div>
+          <div class="box">
+            <img src="img/icon-2.png" />
+            <h3>css</h3>
+          </div>
+          <div class="box">
+            <img src="img/icon-3.png" />
+            <h3>javascript</h3>
+          </div>
+          <div class="box">
+            <img src="img/image-icon 4.jpg" />
+            <h3>Java</h3>
+          </div>
+          <div class="box">
+            <img src="img/image-icon5.png" />
+            <h3>NodeJS</h3>
+          </div>
+          <div class="box">
+            <img src="img/image-icon6.png" />
+            <h3>ExpressJs</h3>
+          </div>
+          <div class="box">
+            <img src="img/icon-7.png" />
+            <h3>MongoDB</h3>
+          </div>
+          <div class="box">
+            <img src="img/icon-8.png" />
+            <h3>C++</h3>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section_title">Qualification</h2>
+
+        <span class="section_subtitle">Myjourney</span>
+
+        <div class="box-container">
+          <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2007-2017</span>
+            <h3>St. Joseph's Convent School, Pune</h3>
+            <p>Completed my 10th from >St. Joseph's Convent School.</p>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2017 - 2019</span>
+            <h3>Sardar Dastur Hormazdiar Junior College, Pune</h3>
+            <p>
+              Completed my 12th from Sardar Dastur Hormazdiar Junior College and
+              was keen to learn more knowledge in science field.
+            </p>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2019 - 2023</span>
+            <h3>Sinhgad College Of Engineering, Pune</h3>
+            <p>
+              Currently pursuing my Bachelor's Degree from Sinhgad College of
+              Engineering in Electronics and Telecommunication field.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section_title">Portfolio</h2>
+
+        <span class="section_subtitle">Most recent work</span>
+
+        <div class="protfolio_container container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1====================-->
+            <div class="portfolio_content grid swiper-slide">
+              <img src="img/portfolio1.png" alt="" class="portfolio_image" />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Travel page</h3>
+                <p class="portfolio_description">
+                  A Landing Page adaptable to all devices, implemented concepts
+                  of HTML, CSS and JavaScript.
+                </p>
+                <a
+                  href="https://travel-page-bice.vercel.app/"
+                  target="blank"
+                  class="button button--flex button--small portfolio_button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2====================-->
+            <div class="portfolio_content grid swiper-slide">
+              <img src="img/portfolio5.png" alt="" class="portfolio_image" />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Task manager</h3>
+                <p class="portfolio_description">
+                  A CRUD Application that Creates, Reads, Updates and Deletes
+                  Tasks.
+                </p>
+                <a
+                  href="https://task-manager-pj.herokuapp.com/tasks"
+                  target="blank"
+                  class="button button--flex button--small portfolio_button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3====================-->
+            <div class="portfolio_content grid swiper-slide">
+              <img src="img/portfolio4.png" alt="" class="portfolio_image" />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Weather App</h3>
+                <p class="portfolio_description">
+                  A web based application through which useris able to get live
+                  weather forecasting. It uses a third party weather API which
+                  sends current weather data by city name.
+                </p>
+                <a
+                  href="https://weather-app-one.herokuapp.com/"
+                  target="blank"
+                  class="button button--flex button--small portfolio_button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 4====================-->
+            <div class="portfolio_content grid swiper-slide">
+              <img src="img/portfolio3.png" alt="" class="portfolio_image" />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Netflix website</h3>
+                <p class="portfolio_description">
+                  Netflix website consisting of Landing page, Sign-in/Sign-up
+                  Page and Browser page clone .
+                </p>
+                <a
+                  href="https://netflix-clone-lovat-theta.vercel.app/"
+                  target="blank"
+                  class="button button--flex button--small portfolio_button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 5====================-->
+            <div class="portfolio_content grid swiper-slide">
+              <img src="img/portfolio2.png" alt="" class="portfolio_image" />
+
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Swiggy Website page</h3>
+                <p class="portfolio_description">
+                  Made a responsive Swiggy Website page clone using technologies
+                  like HTML, CSS and JavaScript.
+                </p>
+                <a
+                  href="https://swiggy-app.vercel.app/"
+                  target="blank"
+                  class="button button--flex button--small portfolio_button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- add pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+        <span class="section_subtitle"> Get in touch </span>
+
+        <div class="contact_container container grid">
+          <div>
+            <div class="contact_information">
+              <i class="uil uil-phone contact-icon"></i>
+              <div>
+                <h3 class="contact_title">Call Me</h3>
+                <span class="contact_subtitle">9999-777-555</span>
+              </div>
+            </div>
+
+            <div class="contact_information">
+              <i class="uil uil-envelope contact-icon"></i>
+              <div>
+                <h3 class="contact_title">Email Me</h3>
+                <span class="contact_subtitle"
+                  >arusha.sharma2001@gmail.com</span
+                >
+              </div>
+            </div>
+
+            <div class="contact_information">
+              <i class="uil uil-map-marker contact-icon"></i>
+              <div>
+                <h3 class="contact_title">Location</h3>
+                <span class="contact_subtitle">Pune-Maharashtra</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact_form grid">
+            <div class="contact_inputs grid">
+              <div class="contact_content">
+                <label for="" class="contact_label">Name</label>
+                <input type="text" class="contact_input" />
+              </div>
+              <div class="contact_content">
+                <label for="" class="contact_label">Email</label>
+                <input type="email" class="contact_input" />
+              </div>
+            </div>
+
+            <div class="contact_content">
+              <label for="" class="contact_label">Project</label>
+              <input type="text" class="contact_input" />
+            </div>
+            <div class="contact_content">
+              <label for="" class="contact_label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="4"
+                class="contact_input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a href="" class="button button--flex">
+                Send Message
+                <i class="uil uil-message button-icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer_bg">
+        <div class="footer_container container grid">
+          <div>
+            <h1 class="footer_title">ARUSHA</h1>
+            <span class="footer_subtitle">Frontend developer</span>
+          </div>
+
+          <ul class="footer">
+            <li><a href="#portfolio" class="footer_link">Portfolio</a></li>
+            <li><a href="#contact" class="footer_link">Contact Me</a></li>
+          </ul>
+
+          <div class="div footer_socials">
+            <a
+              href="https://www.instagram.com/__.arushaaa.__/"
+              class="footer_social"
+            >
+              <i class="uil uil-instagram-alt"></i>
+            </a>
+            <a href="https://twitter.com/home" class="footer_social">
+              <i class="uil uil-twitter"></i>
+            </a>
+            <a href="" class="footer_social"></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copy">&#169; ARUSHA. All right reserved</p>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="index.js"></script>
+  </body>
+</html>
